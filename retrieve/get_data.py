@@ -12,7 +12,3 @@ def get_yield(term: int):
     df.columns = cols
     df = df.truncate(before = pd.to_datetime('2016-2-18'))
     return df
-
-df_1 = get_yield(1)
-
-print(df_1.head())
