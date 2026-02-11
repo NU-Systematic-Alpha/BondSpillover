@@ -1,6 +1,6 @@
 import pandas as pd
 
-EXCEL_PATH = r"./excel_data/YieldData.xlsx"
+EXCEL_PATH = r"../excel_data/YieldData.xlsx"
 
 def get_yield(term: int):
     term_s = f'{term} year'
