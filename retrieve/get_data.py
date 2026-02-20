@@ -1,6 +1,8 @@
 import pandas as pd
+from pathlib import Path
 
-EXCEL_PATH = r"../excel_data/YieldData.xlsx"
+BASE_DIR = Path(__file__).resolve().parent.parent
+EXCEL_PATH = BASE_DIR / "excel_data" / "YieldData.xlsx"
 
 def get_yield(term: int):
     term_s = f'{term} year'
