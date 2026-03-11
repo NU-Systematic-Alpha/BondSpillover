@@ -59,5 +59,6 @@ def get_yield(term: int):
     extra_df = pd.concat(result, axis=1)
     extra_df.columns = cols_to_add
     df = pd.concat([df, extra_df], axis=1)
-        
+    
+    df.sort_index(axis=1)
     return df
